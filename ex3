@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+from math import sqrt
+
+#题目：一个整数，它加上100后是一个完全平方数，
+#     再加上168又是一个完全平方数，请问该数是多少？ 
+
+for i in range(10000): #假设这个数在10k以内
+    min=int(sqrt(i+100))
+    max=int(sqrt(i+168))
+    if min*min-i==100 and max*max-i==168:
+        print ('这个数字是： '+str(i))
