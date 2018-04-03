@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+
+# 题目：输入三个整数x,y,z，请把这三个数由小到大输出。
+
+# 直接运用函数sort
+lis=[]
+l=raw_input().split()
+for i in range(3):
+    lis.append(int(l[i]))
+lis.sort()
+print lis
