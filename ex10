@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+
+# 题目：打印楼梯，同时在楼梯上方打印两个笑脸。
+
+import sys
+sys.stdout.write('😊')
+sys.stdout.write('😊')
+print ''
+
+for i in range(1,11):
+    for j in range(1,i):
+        sys.stdout.write(chr(219))
+    print ''
