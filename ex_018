@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+
+# 题目：求s=a+aa+aaa+aaaa+aa…a的值，其中a是一个数字。例如2+22+222+2222+22222(此时 
+#   　　共有5个数相加)，几个数相加有键盘控制。
+
+print 'please input the a:',
+a=int(raw_input())
+print 'please input the number of digit to add up:',
+n=int(raw_input())
+s=0
+for i in range(n):
+    s=s+(n-i)*pow(10,i)*a
+print 'the total is: '+ str(s)
+    
